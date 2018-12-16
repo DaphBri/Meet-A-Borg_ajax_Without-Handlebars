@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>sans Handlebars</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  <header class="screen">
+    <div class="txt-block">
+      <div class="logos">
+        <img class="logos__hart" src="img/Love_Heart_symbol.svg.png" alt="heart">
+        <img class="logos__flame" src="img/tinder.svg" alt="flame">
+
+      </div>
+      <h1>MEET A 'BORG</h1>
+      <p>Ça va pécho chez les robots 🤖🍆🍑</p>
+    </div>
+
+  </header>
+
+
+  <main>
+    <div class="middle-block">
+      <div class="middle-block__txt">
+        <div class="title">Faites votre choix</div>
+        <div class="text">Il y a <span class="male"> hommes</span> et <span class="female"> femmes</span> !</div>
+        <div class="text">Robot ipsum Picoist encephaloform cortropic Filclinic Nippoploid kilolytic zoate. Vesicoity levoparous Egyptococcus stepsepalous stenoales sexuoling ochllyze xeraceae tarsorrhea taxthymia. Cytococcus cheirify gynaecoetic tristomy triboness bathyac conplastic siderogenesis ophioatory egenous. Myary cobaltofuge orphobe pneumonform Angloplex thalassoodont stethometric. Pathoholic newance poikilocline technographer desderma cuprless anthrostat hexgon cyanoicide. Pneumonozyme dendrism exbisect methylphage iridicoable hemoscope anthropomere.</div>
+      </div>
+      <div class="middle-block__buttons">
+          <div class="but tous" data-filter="All">Afficher tout le monde</div>
+          <div class="but hommes" data-filter="Male">Afficher tout les hommes</div>
+          <div class="but femmes" data-filter="Female">Afficher toutes les femmes</div>
+          <!-- //data-xxx creation d'un atribut, n'importe lequel, semblabla a une classe+valeur -->
+        </div>
+    </div>
+
+    <div id="container">
+<!-- le script se placera ici -->
+    </div>
+
+  </main>
+
+
+
+
+
+  <!-- <script id="borg-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="box" data-gender="{{gender}}">
+      <p>{{first_name}} <strong>{{last_name}}</strong></p>
+      <div class="card {{gender}}" >
+          <div class="type"><strong>Type: </strong>{{type}}</div>
+          <img src="{{portrait}}" alt="">
+          <div class="language"><strong>Langue parlée :</strong> {{language}}</div>
+      </div>
+      <div class="description">{{description}}</div>
+    </div>
+    {{/each}}
+  </script> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
